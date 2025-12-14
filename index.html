@@ -7,22 +7,23 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grcode">
+   <!-- Кнопка переключения темы -->
+   <button id="theme-toggle" class="button__den">🌙</button>
 
-   <div class="container">
-      <h1>QR-код генератор</h1>
+   <div class="grcode">
+       <div class="container">
+           <h1>QR-код генератор</h1>
 
-      <input
-         type="text"
-         id="qr-input"
-         placeholder="Вставь ссылку..."
-      >
+           <input type="text" id="qr-input" placeholder="Вставь ссылку...">
 
-      <button id="generate-btn">Создать QR-код</button>
+           <button id="generate-btn">Создать QR-код</button>
+           <button id="clear-btn">Удалить QR-код</button>
+           <button id="download-btn">Скачать QR-код</button>
 
+       </div>
+           <div id="qr-code" class="gr__paste"></div>
    </div>
-    <div id="qr-code" class="gr__paste"></div>
-    </div>
+
    <!-- библиотека QR -->
    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
    <script src="script.js"></script>
