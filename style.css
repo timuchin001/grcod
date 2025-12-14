@@ -103,6 +103,12 @@ button {
 .button__den {
    width: 10vh;
 }
+#download-btn {
+   background: linear-gradient(135deg, #34ff9e, #1fd38a);
+   color: #0a3d2a;
+   border-radius: 12px;
+   box-shadow: 0 20px 20px rgba(52,255,158,0.25);
+}
 
 button:hover {
    transform: translateY(-2px);
